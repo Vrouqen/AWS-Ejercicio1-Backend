@@ -7,13 +7,13 @@ app = Flask(__name__)
 CORS(app)
 
 connDBUsers = mysql.connector.connect(
-    host='dbusers',
+    host='3.87.235.20',
     port=3306,  
     user='root',
     password='dbusers123',
     database='dbUsers'
 )
-
+"""
 connDBIncomes = mysql.connector.connect(
     host='dbincomes',
     port=3306,  
@@ -29,6 +29,7 @@ connDBCosts = mysql.connector.connect(
     password='dbcost123',
     database='dbCosts'
 )
+"""
 
 @app.route("/users/login", methods=["POST"])
 def login():
