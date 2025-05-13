@@ -13,23 +13,6 @@ connDBUsers = mysql.connector.connect(
     password='dbusers123',
     database='dbUsers'
 )
-"""
-connDBIncomes = mysql.connector.connect(
-    host='dbincomes',
-    port=3306,  
-    user='root',
-    password='dbincome123',
-    database='dbIncomes'
-)
-
-connDBCosts = mysql.connector.connect(
-    host='dbcosts',
-    port=3306,  
-    user='root',
-    password='dbcost123',
-    database='dbCosts'
-)
-"""
 
 @app.route("/users/login", methods=["POST"])
 def login():
