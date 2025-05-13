@@ -50,7 +50,7 @@ def insert_session():
     connDBUsers.commit()
     cursorUsers.close()
     return jsonify({
-        'message': 'Session inserted succesfully on DB'
+        'message': 'Session inserted succesfully on DB.'
     })
 
 
